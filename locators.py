@@ -16,7 +16,7 @@ class LocatorsMainPageUserAccount:
     button_constructor_in_user_account = (By.XPATH, '//p[text()="Конструктор"]')
 
     # Логотип Stellar Burgers
-    logo = (By.CSS_SELECTOR, '.AppHeader_header__logo__2D0X2')
+    logo = (By.XPATH, '//div[contains(@class, "AppHeader_header__logo")]')
 
     # Кнопка "Выйти" в "Личном кабинете"
     button_sign_out = (By.XPATH, '//main//button[text()="Выход"]')
@@ -55,7 +55,7 @@ class LocatorsRegistration:
     button_registration = (By.XPATH, '//form//button[text() = "Зарегистрироваться"]')
 
     # Кнопка "Войти" в форме регистрации
-    button_sign_in_registration = (By.CSS_SELECTOR, '.Auth_link__1fOlj')
+    button_sign_in_registration = (By.CSS_SELECTOR, 'a[href="/login"]')
 
     # Ошибка "Некорректный пароль"
     password_error = (By.XPATH, '//form//p[text()="Некорректный пароль"]')
